@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Pawarut Kumnungwut</h1>
+            <!-- <p>Web Developer | Designer | Programmer</p> -->
+            <nav>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav id="sticky-nav" class="sticky-nav" style="display: none;">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="container about-content">
+        <img src="link.jpg" alt="Pawarut Kumnungwut" class="profile-image">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>My name is Pawarut Kumnungwut (Link). I am a student at King Mongkut's University of Technology Thonburi (KMUTT). I am currently studying first year in Computer Engineering.</p>
+        </div>
+    </div>
+    <div class="info-card">
+        <h3>Personal Information</h3>
+        <ul class="info-list">
+            <li><strong>Date of Birth:</strong> 21 June 2006</li>
+            <li><strong>Age:</strong> 18 Years</li>
+            
+            <li><strong>Nationality:</strong> Thai</li>
+            <li><strong>Religion:</strong>  Buddhism</li>
+            <li><strong>School:</strong> Sarasas Ektra School</li>
+            <li><strong>GPAX:</strong> 3.96 </li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- Education Section --> 
+<section id="education" class="section">
+    <div class="container">
+        <h2>Education</h2>
+        <div class="education-card">
+            <ul class="education-list">
+                <li class="centered">
+                    <img src="kinder.jpg" alt="ABC Kindergarten School" class="education-image">
+                    <a href="https://zaubee.com/biz/wannaboon-suksa-kindergarten-x3bcqalr" target="_blank" class="education-link">
+                        <div class="education-info">
+                            <h3>Kindergarten School</h3>
+                            <p>Wannaboon Suksa Kindergarten</p>
+                            <p><strong>Year:</strong> 2008 - 2011</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="centered">
+                    <img src="ektra.png" alt="Sarasas Ektra School" class="education-image">
+                    <a href="https://www.ektra.ac.th/" target="_blank" class="education-link">
+                        <div class="education-info">
+                            <h3>Primary - Secondary School</h3>
+                            <p>Sarasas Ektra School</p>
+                            <p><strong>Year:</strong> 2011 - 2024</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="centered">
+                    <img src="kmutt.jpg" alt="KMUTT University" class="education-image">
+                    <a href="https://www.kmutt.ac.th/en/" target="_blank" class="education-link">
+                        <div class="education-info">
+                            <h3>University</h3>
+                            <p>King Mongkut's University of Technology Thonburi (KMUTT)</p>
+                            <p><strong>Year:</strong> 2024 - 2028</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-card-container">
+            
+            <div class="skill-card">
+                <h3>Programming</h3>
+                
+                <ul>
+                    
+                    <li>C</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    
+                </ul>
+            </div>
+            
+            <div class="skill-card">
+                <h3>Design</h3>
+                <ul>
+                    <li>Canva</li>
+                    <li>Tinkercad</li>
+                    
+                    <li>Photoshop</li>
+                    
+                </ul></div>
+            <div class="skill-card">
+                <h3>Music</h3>
+                <ul>
+                    <li>Piano</li>
+                    <li>Guitar</li>
+                    <li>Saxophone</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Sports</h3>
+                <ul>
+                    <li>Football</li>
+                    <li>Basketball</li>
+                    <li>GO (Chess)</li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+document.querySelectorAll('.skill-header').forEach(button => {
+    button.addEventListener('click', () => {
+        const skillList = button.nextElementSibling;
+        if (skillList.style.display === "block") {
+            skillList.style.display = "none"; // Hide the list
+        } else {
+            skillList.style.display = "block"; // Show the list
+        }
+    });
+});
+</script>
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-list">
+            <div class="contact-item">
+                <p>Email: <a href="mailto:yourname@example.com">link.studying@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <p>Instagram: <a href="https://www.instagram.com/linkpawarut/" target="_blank">@linkpawarut</a></p>
+            </div>
+            <div class="contact-item">
+                <p>Contact Number: <a href="tel:+66 932642519">+66 93 264 2519</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LinkPawarut Portfolio. </p>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            const stickyNav = document.getElementById('sticky-nav');
+    
+            // Check if the page has scrolled past the header's height
+            if (window.scrollY > header.offsetHeight) {
+                stickyNav.style.display = 'block'; // Show sticky nav
+            } else {
+                stickyNav.style.display = 'none'; // Hide sticky nav
+            }
+        });
+    </script>
+    
+
+</body>
+</html>

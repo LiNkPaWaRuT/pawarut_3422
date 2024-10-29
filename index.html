@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Pawarut Kumnungwut Portfolio</title>
+    <link rel="stylesheet" href="landingstyles.css">
+    <style>
+        /* Include your existing CSS styles here */
+
+        /* Slide-in animation */
+        .slide-in {
+            animation: slideIn 1s ease-out forwards; /* Controls speed and easing of slide-in */
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%); /* Slide in from top */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* End position */
+            }
+        }
+
+        /* Fade-out animation for transition */
+        .fade-out {
+            animation: fadeOut 0.5s forwards;
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Landing Section -->
+    <section id="landing">
+        <div class="overlay"></div> <!-- Galaxy overlay for enhanced readability -->
+        <div class="container slide-in"> <!-- Apply the slide-in class here -->
+            <h1>Welcome to</h1>
+            <h1 class="name">Pawarut Kumnungwut</h1>
+            <p>Explore My Portfolio</p>
+            <!-- Button with ID -->
+            <a href="new.html" id="enter-btn" class="enter-btn">Enter Site</a>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('enter-btn').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default action (navigation)
+            const container = document.querySelector('.container');
+
+            // Add the fade-out class to the container
+            container.classList.add('fade-out');
+
+            // Wait for the animation to finish, then navigate to the new page
+            setTimeout(() => {
+                window.location.href = this.href; // Navigate to the new page
+            }, 500); // Match the duration of the animation
+        });
+    </script>
+</body>
+</html>
